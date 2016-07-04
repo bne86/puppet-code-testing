@@ -10,3 +10,13 @@ This image contains several Ruby gems, required to test puppet code including
 Using this image we have more or less statical versions of the gems, but
 starting a CI run becomes much faster. Therefore we can live with statical
 versions.
+
+One way to use this script within .gitlab-ci.yml:
+
+```
+  image: benedicere/puppet-code-testing:latest
+  
+  validation:
+    script:
+      - /usr/local/bundle/bin/rake test
+```
