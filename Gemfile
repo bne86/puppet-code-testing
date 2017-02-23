@@ -16,5 +16,6 @@ gem 'beaker-rspec',                         :require => 'false'
 gem 'beaker-puppet_install_helper',         :require => 'false'
 gem 'puppet',                               :require => 'false'
 gem 'facter',                               :require => 'false'
+gem 'r10k',                                 :require => 'false'
 
 # vim:ft=ruby
